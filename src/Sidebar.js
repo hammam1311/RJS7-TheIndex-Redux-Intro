@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { addAuthor } from "./actions";
 
 const Sidebar = props => {
   return (
@@ -21,10 +22,16 @@ const Sidebar = props => {
   );
 };
 
-const mapDispatchToProps = dispatch => {
+const mapStateToProps = state => {
   return {
-    addAuthor: () => dispatch({ type: "ADD_AUTHOR" })
+    newAuthId: state.newAuthorId
   };
 };
 
-export default connect(null, mapDispatchToProps)(Sidebar);
+const mapDispatchToProps = dispatch => {
+  return {
+    addAuthor: () => dispatch(addAuthor())
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Sidebar);
