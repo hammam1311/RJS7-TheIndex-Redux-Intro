@@ -22,16 +22,10 @@ const Sidebar = props => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    newAuthId: state.newAuthorId
-  };
-};
-
 const mapDispatchToProps = dispatch => {
   return {
     addAuthor: () => dispatch(addAuthor())
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Sidebar);
+export default connect(null, mapDispatchToProps)(Sidebar);
