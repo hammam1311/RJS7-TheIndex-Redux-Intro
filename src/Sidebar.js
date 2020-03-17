@@ -9,6 +9,7 @@ const Sidebar = props => {
           <button>AUTHORS</button>
         </h4>
         <button
+          id="add-button"
           className="btn btn-block btn-light"
           onClick={props.addAuthorHandler}
         >
