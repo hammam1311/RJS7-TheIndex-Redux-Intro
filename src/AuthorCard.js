@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { deleteAuthor } from "./stores/actions";
+import { deleteAuthor } from "./redux/actions";
 
 const AuthorCard = props => {
   const author = props.author;
@@ -38,7 +38,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(AuthorCard);
+export default connect(null, mapDispatchToProps)(AuthorCard);

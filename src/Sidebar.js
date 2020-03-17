@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addAuthor } from "./stores/actions";
+import { addAuthor } from "./redux/actions";
 
 const Sidebar = props => {
   return (
