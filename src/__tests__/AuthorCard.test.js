@@ -7,7 +7,7 @@ import configureStore from "redux-mock-store";
 import AuthorCard from "../AuthorCard";
 
 // Actions
-import { deleteAuthor } from "../redux/actions";
+import { deleteAuthor } from "../redux/actionCreators";
 
 // Mocks
 import { fakeAuthor } from "../testUtils";

@@ -1,4 +1,4 @@
-import { addAuthor, deleteAuthor } from "../actions";
+import { addAuthor, deleteAuthor } from "../actionCreators";
 import { fakeAuthor } from "../../testUtils";
 
 describe("`addAtuhor` action", () => {
