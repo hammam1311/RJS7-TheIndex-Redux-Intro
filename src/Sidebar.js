@@ -1,6 +1,6 @@
 import React from "react";
 
-function Sidebar(props) {
+const Sidebar = props => {
   return (
     <div id="sidebar">
       <img src="theindex.svg" className="logo" alt="the index logo" />
@@ -17,6 +17,6 @@ function Sidebar(props) {
       </section>
     </div>
   );
-}
+};
 
 export default Sidebar;

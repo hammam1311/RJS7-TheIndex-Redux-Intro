@@ -1,6 +1,6 @@
 import React from "react";
 
-function AuthorCard(props) {
+const AuthorCard = props => {
   const author = props.author;
   const authorName = `${author.first_name} ${author.last_name}`;
   return (
@@ -23,6 +23,6 @@ function AuthorCard(props) {
       </div>
     </div>
   );
-}
+};
 
 export default AuthorCard;
