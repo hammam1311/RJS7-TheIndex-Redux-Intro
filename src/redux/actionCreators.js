@@ -3,7 +3,7 @@
  */
 export const addAuthor = () => {
     return {
-        type: "ADD AUTHOR"
+        type: "ADD_AUTHOR"
     }
 
 }

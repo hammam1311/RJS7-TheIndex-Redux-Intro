@@ -9,7 +9,7 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case "ADD AUTHOR":
+    case "ADD_AUTHOR":
       const newAuthor = {
         id: state.newAuthorId,
         first_name: "Author",
